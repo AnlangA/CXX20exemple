@@ -6,3 +6,6 @@ run path:
         exit 1
     fi
     cd {{path}} && just
+
+fmt:
+    clang-format -i ./**/*.cpp

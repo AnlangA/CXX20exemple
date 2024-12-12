@@ -1,0 +1,8 @@
+# Run just in specified directory
+run path:
+    #!/usr/bin/env bash
+    if [ ! -d "{{path}}" ]; then
+        echo -e "\033[31mError: Directory '{{path}}' does not exist\033[0m"
+        exit 1
+    fi
+    cd {{path}} && just

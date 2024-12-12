@@ -1,0 +1,3 @@
+run:
+    clang++ -std=c++2a -stdlib=libc++ -fimplicit-modules -fimplicit-module-maps -fprebuilt-module-path=. main.cpp -o main.exe
+    ./main.exe
